@@ -1,0 +1,32 @@
+
+<div class="layout-container">
+
+  <header role="banner">
+    {{ page.header }}
+  </header>
+
+  {{ page.breadcrumb }}
+
+  {{ page.highlighted }}
+
+  {{ page.help }}
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+   {# deleted regions page.content, page.sidebar_first,page.sidebar_second, for frontpage #}
+    
+    {% if page.front  %}
+      <div class="front" class="content" >
+        {{ page.front }}
+      </div>
+     {% endif %}
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+</div>{# /.layout-container #}

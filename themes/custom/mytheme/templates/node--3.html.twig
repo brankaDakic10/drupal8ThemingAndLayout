@@ -94,7 +94,18 @@
   {% endif %}
 
   <div{{ content_attributes }}>
-    {{ content }}
+  {# all content for  article page  is here #}
+    {# {{ content }} #}
+
+    {# add individual fields which are in article Content Type#}
+    {# add class in style.css(div.article img) -all content is divided on two same columns with img left and body right #}
+    <div class="article">
+    {{ content.field_image }} 
+    {{ content.body }} 
+    </div>
   </div>
 
 </article>
+
+
+{# node--3.html.twig is show content only for article with this node id #}

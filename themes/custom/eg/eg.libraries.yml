@@ -3,6 +3,13 @@ eg-css:
   css:
     base:
       css/base/styles.css: {}
+    layout:
+      css/layout/layout.css: {} 
+      # css/layout/responsive.css: {}
+    component:
+      css/components/menu.css: {} 
+      css/components/button.css: {} 
+      css/components/views.css: {}   
      
 quicksand:
   license:
